@@ -1,4 +1,4 @@
-# PLP - Browser
+# PLP App: Browser
 
 Portable Linked Profile Browser. This repo will host definitions and implementations for Browsers working with PLP 
 

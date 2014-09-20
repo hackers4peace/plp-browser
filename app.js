@@ -7,19 +7,19 @@ function getProfilesListedInDirectory(directoryUrl)
 	console.log("Running getProfilesListedInDirectory");
 
 	$.get( directoryUrl, function( data ) {
-	
+
 		return data;
 
 	});
 }
 
 $(function(){
-  
+
   // Make call to listProfiles function on directory
-  var directoryUrl = 'http://directory.plp.hackers4peace.net/getProfiles';
+  var directoryUrl = window.plp.config+'/getProfiles';
 
   // Print results
   $("#listings").html(getProfilesListedInDirectory(directoryUrl));
-  
+
 });
 

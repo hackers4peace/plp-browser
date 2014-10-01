@@ -3,6 +3,8 @@ $(function(){
   // Make call to listProfiles function on directory
   var directoryUrl = window.plp.config;
 
+	console.log("Browsing listings from "+directoryUrl);
+
   superagent.get(directoryUrl)
 		.end(function(err,res){
 
@@ -14,9 +16,9 @@ $(function(){
 
 					if(res.ok) {
 
-						console.log('Profile correctly downloaded from provider ' + res.body);
+						console.log('Profile correctly downloaded from provider ' + JSON.stringifyres.body));
 
-						$("#listings").html(res.body);
+						$("#listings").html(JSONres.body);
 
 					}
 

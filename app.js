@@ -16,7 +16,7 @@ $(function(){
 
 					if(res.ok) {
 
-						console.log('Profile correctly downloaded from provider ' + JSON.stringifyres.body));
+						console.log('Profile correctly downloaded from provider ' + JSON.stringify(res.body));
 
 						$("#listings").html(JSONres.body);
 
